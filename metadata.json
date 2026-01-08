@@ -1,6 +1,6 @@
 {
   "name": "WAW Pro Dashboard",
-  "description": "A comprehensive project management and analytics dashboard with AI-powered insights, team management, and personal settings.",
+  "description": "WAW Pro is a free Vite admin dashboard with analytics, AI workspace, team pages, and modern multipage layout.",
   "requestFramePermissions": [
     "camera",
     "microphone"

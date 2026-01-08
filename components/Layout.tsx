@@ -1,5 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
+import profileImage from '../waqasahmedwaseer.png';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 
 interface LayoutProps {
@@ -65,8 +66,10 @@ const SidebarContent: React.FC<{ onLogout: () => void; closeMobile?: () => void 
     <div className="flex flex-col h-full">
       <div className="p-6 border-b border-slate-100 dark:border-slate-800">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center text-white shadow-glow">
-            <span className="material-icons-round text-2xl">auto_awesome</span>
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-purple-600 p-0.5 shadow-glow">
+            <div className="h-full w-full overflow-hidden rounded-[10px] bg-white dark:bg-slate-900">
+              <img src={profileImage} alt="Waqas Ahmed Waseer" className="h-full w-full object-cover" />
+            </div>
           </div>
           <div>
             <h1 className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-400">WAW Pro</h1>
@@ -122,7 +125,9 @@ const Header: React.FC<{ onToggleSidebar: () => void }> = ({ onToggleSidebar }) 
         <button onClick={toggleDarkMode} className="p-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full"><span className="material-icons-outlined">{isDarkMode ? 'light_mode' : 'dark_mode'}</span></button>
         <NotificationDropdown />
         <NavLink to="/profile" className="flex items-center gap-2 pl-2 group">
-          <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-[10px] font-bold text-white border border-slate-200 dark:border-slate-700">WW</div>
+          <div className="w-8 h-8 rounded-full border border-slate-200 dark:border-slate-700 overflow-hidden bg-white dark:bg-slate-900">
+            <img src={profileImage} alt="Waqas Ahmed Waseer" className="h-full w-full object-cover" />
+          </div>
         </NavLink>
       </div>
     </header>

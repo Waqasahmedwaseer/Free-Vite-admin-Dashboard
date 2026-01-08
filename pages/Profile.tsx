@@ -1,5 +1,6 @@
 
 import React from 'react';
+import profileImage from '../waqasahmedwaseer.png';
 
 const Profile: React.FC = () => {
   return (
@@ -26,8 +27,14 @@ const Profile: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-10 items-start">
           <div className="flex flex-col items-center gap-4 w-full md:w-auto">
             <div className="relative group cursor-pointer">
-              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center text-white text-4xl font-bold ring-4 ring-white dark:ring-slate-800 shadow-xl">
-                WW
+              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-purple-600 p-1 ring-4 ring-white dark:ring-slate-800 shadow-xl">
+                <div className="h-full w-full overflow-hidden rounded-full bg-white dark:bg-slate-900">
+                  <img
+                    src={profileImage}
+                    alt="Waqas Ahmed Waseer"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
               </div>
               <div className="absolute inset-0 bg-black/40 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <span className="material-icons-outlined text-white text-3xl">camera_alt</span>

@@ -31,7 +31,8 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                 <input 
                   type="email" 
                   required 
-                  placeholder="courtney@prodify.app" 
+                  placeholder="admin@admin.com"
+                  defaultValue="admin@admin.com"
                   className="w-full pl-10 pr-4 py-3 bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-primary/20 transition-all text-sm"
                 />
               </div>
@@ -49,7 +50,8 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                 <input 
                   type="password" 
                   required 
-                  placeholder="••••••••" 
+                  placeholder="123456"
+                  defaultValue="123456"
                   className="w-full pl-10 pr-4 py-3 bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-primary/20 transition-all text-sm"
                 />
               </div>

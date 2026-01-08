@@ -48,7 +48,16 @@ const ChatWidget: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-[100]">
+    <div className="fixed bottom-8 right-8 z-[100] flex flex-col items-end gap-3">
+      <a
+        href="https://waseerhost.com"
+        target="_blank"
+        rel="noreferrer"
+        className="hidden sm:inline-flex items-center gap-2 rounded-full border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 px-3 py-1.5 text-[11px] font-semibold text-slate-600 dark:text-slate-300 shadow-soft backdrop-blur hover:text-primary hover:border-primary/60 transition-colors"
+      >
+        Hosted on WaseerHost
+        <span className="material-icons-outlined text-xs">open_in_new</span>
+      </a>
       {isOpen ? (
         <div className="bg-surface-light dark:bg-surface-dark w-80 sm:w-96 h-[550px] rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 flex flex-col overflow-hidden animate-in slide-in-from-bottom-10 fade-in duration-300">
           <div className="p-5 bg-gradient-to-r from-primary to-purple-600 text-white flex items-center justify-between shadow-lg">
